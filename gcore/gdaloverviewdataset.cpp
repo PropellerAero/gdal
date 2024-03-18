@@ -150,7 +150,7 @@ static GDALRasterBand *GetOverviewEx(GDALRasterBand *poBand, int nLevel)
 // Takes a reference on poMainDS in case of success.
 // nOvrLevel=-1 means the full resolution dataset (only useful if
 // bThisLevelOnly = false to expose a dataset without its overviews)
-GDALDataset *GDALCreateOverviewDataset(GDALDataset *poMainDS, int nOvrLevel,
+GDALDataset CPL_STDCALL *GDALCreateOverviewDataset(GDALDataset *poMainDS, int nOvrLevel,
                                        bool bThisLevelOnly)
 {
     // Sanity checks.
