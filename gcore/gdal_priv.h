@@ -4160,7 +4160,7 @@ void GDALRasterIOExtraArgSetResampleAlg(GDALRasterIOExtraArg *psExtraArg,
                                         int nXSize, int nYSize, int nBufXSize,
                                         int nBufYSize);
 
-GDALDataset *GDALCreateOverviewDataset(GDALDataset *poDS, int nOvrLevel,
+GDALDataset CPL_DLL CPL_STDCALL *GDALCreateOverviewDataset(GDALDataset *poDS, int nOvrLevel,
                                        bool bThisLevelOnly);
 
 // Should cover particular cases of #3573, #4183, #4506, #6578
